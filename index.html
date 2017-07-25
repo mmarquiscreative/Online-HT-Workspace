@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <script>
+  function handleLoad(e) {
+    console.log('Loaded import: ' + e.target.href);
+  }
+  function handleError(e) {
+    console.log('Error loading import: ' + e.target.href);
+  }
+</script>
+       <link rel="import" href="stageHTML.html" onload="handleLoad(event)" onerror="handleError(event)">
+       <link rel="stylesheet" href="main.css" type="text/css">
+        <title>Online Hearing Test</title>
+    </head>
+    <body>
+       <div id="prog-bar"></div>
+        <div id="stage__container"></div>
+       <script src="app.js"></script>
+    </body>
+</html>
